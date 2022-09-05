@@ -1,0 +1,796 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* home */
+
+#home {
+  width: 100vw;
+  background-image: radial-gradient(
+    circle,
+    #252c24,
+    #242c23,
+    #242c23,
+    #232c22,
+    #232c21
+  );
+}
+
+#nav {
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 4rem;
+  color: #171c16;
+  font-family: "Sacramento", cursive;
+  background-color: #968677;
+  padding: 5px 20px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 10px;
+  transform: rotate(-10deg);
+  user-select: none;
+}
+
+#nav-link {
+  display: flex;
+}
+
+#nav-link li {
+  list-style-type: none;
+  padding: 10px 20px;
+}
+
+#nav-link li a {
+  text-decoration: none;
+  color: #e5dddb;
+  font-size: 1.2rem;
+  font-family: "Righteous", cursive;
+  transition: 0.4s;
+  display: inline-block;
+  letter-spacing: 3px;
+}
+
+#nav-link li a:hover {
+  transform: scale(0.9);
+}
+
+.bars {
+  color: #968677;
+  font-size: 2rem;
+  z-index: 2;
+  position: relative;
+  display: none;
+  cursor: pointer;
+}
+
+.bars:hover {
+  color: #c7af99;
+}
+
+.main {
+  padding: 50px 50px 130px;
+  display: flex;
+}
+
+.content {
+  padding-top: 100px;
+  padding-right: 100px;
+  width: 40%;
+}
+
+.title {
+  font-size: 3rem;
+  font-family: "Uncial Antiqua", cursive;
+  color: #968677;
+}
+
+.text {
+  color: #efead7;
+  font-family: "Righteous", cursive;
+  letter-spacing: 2px;
+  font-weight: 300;
+  padding-top: 40px;
+}
+
+#order {
+  padding: 10px 10px;
+  margin-top: 30px;
+  font-family: "Righteous", cursive;
+  text-align: center;
+  width: 150px;
+  border-radius: 40px;
+  background-color: #252c24;
+  border: 1px solid #efead7;
+}
+
+#order a {
+  text-decoration: none;
+  color: #efead7;
+}
+
+#order:hover {
+  background-color: #535a51dc;
+}
+
+.image {
+  background-image: url("../images/home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  width: 900px;
+  height: 400px;
+  box-shadow: 30px 30px #968677;
+}
+
+/* home end */
+
+/* services */
+
+#services {
+  position: relative;
+  width: 100vw;
+  color: #171c16;
+  background: #d4b991;
+}
+
+.services-of-coffee {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 50px 74px;
+}
+
+.sourcing,
+.roasting,
+.delivering {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sourcing img,
+.roasting img,
+.delivering img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sourcing p,
+.roasting p,
+.delivering p {
+  font-size: 0.9rem;
+  color: #232c21;
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: "Righteous", cursive;
+}
+
+.sourcing h1,
+.roasting h1,
+.delivering h1 {
+  font-size: 1.5rem;
+  font-family: "Righteous", cursive;
+  letter-spacing: 2px;
+  padding: 20px;
+}
+
+/* services end */
+
+/* menu */
+
+#menu {
+  width: 100vw;
+  background-image: radial-gradient(
+    circle,
+    #252c24,
+    #242c23,
+    #242c23,
+    #232c22,
+    #232c21
+  );
+  position: relative;
+}
+
+svg {
+  margin: -2px 0 0 0;
+}
+
+.title-menu {
+  color: #d4b991;
+  font-family: "Uncial Antiqua", cursive;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 120px;
+  left: 120px;
+}
+
+#cartBtn {
+  padding: 10px 40px;
+  color: #d4b991;
+  border: #d4b991 solid 1px;
+  background-color: #242c23;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Righteous", cursive;
+  border-radius: 20px;
+  float: right;
+  margin: 0 100px 80px;
+  cursor: pointer;
+}
+
+#cartBtn:hover {
+  background-color: #313d2fdc;
+}
+
+#result-of-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  padding: 0 50px 0;
+}
+
+.coffee-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: rgb(0 0 0 / 3%) 0px 2px 4px 4px;
+  font-family: "Nunito", sans-serif;
+  margin: 0 20px 30px;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+.coffee-item img {
+  width: 120px;
+  height: 120px;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.coffee-item h2 {
+  font-size: 2rem;
+  color: #d4b991;
+  letter-spacing: 3px;
+  width: 20%;
+  text-align: center;
+}
+
+.coffee-item h3 {
+  color: #d4b991;
+  letter-spacing: 3px;
+  width: 40%;
+  text-align: center;
+}
+
+.fa-cart-shopping {
+  color: #d4b991;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.fa-cart-shopping:hover {
+  color: #7a6443;
+}
+/* menu end */
+
+/* contant */
+
+#contant {
+  width: 100vw;
+  background-color: #d4b991;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 200px;
+}
+
+.social i {
+  color: #242c23;
+  font-size: 3.5rem;
+  cursor: pointer;
+}
+
+.social i:hover {
+  color: #454b44;
+}
+
+/* contant end*/
+
+/* loading */
+
+#loading {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #242c23;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* loading end */
+
+/* toast */
+
+#toast {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  transition: all 0.4s ease-in-out;
+}
+
+#toast h1 {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #d4b991;
+  background-color: #335358;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 2px;
+}
+
+/* toast end  */
+
+/* cartModal  */
+
+#cartModal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.699);
+}
+
+#cartParent {
+  background-color: #fff;
+  width: 700px;
+  height: 650px;
+  border-radius: 20px;
+  font-family: "Nunito", sans-serif;
+  position: absolute;
+}
+
+.header-of-modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 40px;
+  color: #40493d;
+}
+
+.header-of-modal h1 {
+  font-size: 2.5rem;
+}
+
+.header-of-modal i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.header-of-modal i:hover {
+  color: #7c8a79ee;
+}
+
+#body-of-modal {
+  width: 100%;
+  height: 450px;
+  overflow-y: auto;
+}
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.footer button {
+  padding: 10px 40px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  background-color: #40493d;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.footer button:hover {
+  background-color: #6c746a;
+}
+
+/* cart Modal end */
+
+/* select */
+
+.selected {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgb(0 0 0 / 3%) 0px 2px 4px 4px;
+  font-family: "Nunito", sans-serif;
+  margin: 0 20px 30px;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+.selected img {
+  width: 80px;
+  height: 80px;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.selected h2 {
+  color: #40493d;
+  font-size: 1.5rem;
+}
+
+.selected h3,
+.selected i {
+  display: none;
+}
+
+/* select end */
+
+/******************************************************************/
+
+/* RESPONSIVE */
+
+@media all and (min-width: 1700px) {
+  .title-menu {
+    top: 140px;
+    left: 140px;
+  }
+}
+
+@media all and (max-height: 650px) {
+  #cartParent {
+    height: 580px;
+  }
+
+  #body-of-modal {
+    height: 380px;
+  }
+}
+
+@media all and (max-width: 1300px) {
+  .content {
+    width: 50%;
+    padding-top: 50px;
+    padding-right: 50px;
+  }
+
+  .image {
+    width: 800px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .image {
+    width: 600px;
+  }
+
+  .logo {
+    font-size: 3rem;
+  }
+
+  .bars {
+    display: inline-block;
+  }
+
+  #nav-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #232c21;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transition: 0.4s linear;
+  }
+
+  #nav-link.active {
+    display: flex;
+  }
+
+  #result-of-menu {
+    padding: 0 20px 0;
+  }
+
+  .coffee-item {
+    margin: 0 0 30px 0;
+  }
+
+  .coffee-item img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .coffee-item h2 {
+    font-size: 1.5rem;
+    width: 15%;
+  }
+}
+
+@media all and (max-width: 900px) {
+  #result-of-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+  }
+
+  .coffee-item {
+    width: 370px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+
+  .coffee-item img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .coffee-item h2 {
+    font-size: 3rem;
+    margin: 20px 0 0 0;
+    width: auto;
+  }
+
+  .coffee-item h3 {
+    width: auto;
+    margin: 20px 0 40px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .image {
+    background-image: url("../home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+    box-shadow: 30px 30px #968677;
+  }
+
+  .content {
+    padding-top: 40px;
+    padding-right: 0;
+    padding-bottom: 50px;
+    width: 100%;
+  }
+
+  .services-of-coffee {
+    flex-direction: column;
+  }
+
+  .sourcing,
+  .roasting,
+  .delivering {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .sourcing p,
+  .roasting p,
+  .delivering p {
+    width: 370px;
+  }
+}
+
+@media all and (max-width: 700px) {
+  #cartParent {
+    width: 370px;
+  }
+
+  #cartBtn {
+    margin: 20px 30px 80px;
+  }
+
+  .title-menu {
+    top: 100px;
+    left: 20px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .title-menu {
+    top: 80px;
+    left: 20px;
+    font-size: 1.8rem;
+  }
+
+  #cartBtn {
+    margin: 40px 20px 80px;
+    font-size: 1.4rem;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 3rem;
+    color: #e5dddb;
+    background-color: #232c22;
+    padding: 20px 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    transform: rotate(0);
+  }
+
+  #nav {
+    padding: 0 20px;
+  }
+
+  .main {
+    padding: 50px 20px 130px;
+  }
+}
+
+@media (hover: none) {
+  .footer button,
+  .header-of-modal i,
+  .social i,
+  .fa-cart-shopping,
+  #cartBtn,
+  .bars,
+  a {
+    cursor: default;
+  }
+}
+
+/* RESPONSIVE */
