@@ -699,10 +699,6 @@ svg {
   }
 
   .image {
-    background-image: url("../home.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
     width: 100%;
     height: 500px;
     box-shadow: 30px 30px #968677;
