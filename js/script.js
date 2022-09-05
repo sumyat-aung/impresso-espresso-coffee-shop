@@ -5,7 +5,7 @@ window.addEventListener("load", () => {
 });
 
 // nav-bar responsive
-const bars = document.getElementsByClassName("bars")[0];
+const bars = document.getElementById("bars");
 const navLink = document.getElementById("nav-link");
 bars.addEventListener("click", () => {
   navLink.classList.toggle("active");

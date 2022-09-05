@@ -66,16 +66,16 @@
   transform: scale(0.9);
 }
 
-.bars {
+#bars {
   color: #968677;
   font-size: 2rem;
   z-index: 2;
   position: relative;
-  display: none;
   cursor: pointer;
+  display: none;
 }
 
-.bars:hover {
+#bars:hover {
   color: #c7af99;
 }
 
@@ -617,7 +617,7 @@ svg {
     font-size: 3rem;
   }
 
-  .bars {
+  #bars {
     display: inline-block;
   }
 
@@ -787,7 +787,7 @@ svg {
   .social i,
   .fa-cart-shopping,
   #cartBtn,
-  .bars,
+  #bars,
   a {
     cursor: default;
   }
